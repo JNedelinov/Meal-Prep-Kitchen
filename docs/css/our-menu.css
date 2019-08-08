@@ -1,5 +1,12 @@
 @import url("typography.css");
+
 @import url("gallery-grid.css");
+
+@import url("about-us.css");
+@import url("our-team.css");
+
+@import url("contact-us.css");
+
 @import url("site-footer.css");
 
 *, *:before, *:after {
@@ -44,6 +51,7 @@ section > .content {
     z-index: 2;
     opacity: .9;
     box-shadow: 0 0 10px 0 black;
+    z-index: 10;
 }
 
 .site-header > p {

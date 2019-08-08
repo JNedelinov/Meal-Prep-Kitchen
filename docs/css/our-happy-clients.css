@@ -2,7 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 75em;
-    margin: 0 auto 4em auto;
+    max-height: 100%;
+    margin: 0 auto 3em auto;
     padding: 1em;
 }
 
@@ -15,17 +16,9 @@
 .client {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    flex: 1 0 100%;
+    justify-content: space-evenly;
+    flex-basis: 33%;
 }
-
-/* .betty,
-.john,
-.jessica {
-    display: flex;
-    flex-wrap: wrap;
-    flex: 1 0 33%;
-} */
 
 /* MEDIA Q FOR TABLETS (1 customer per scroll) */
 
@@ -80,10 +73,65 @@
 .client p {
     flex: 1 0 100%;
     text-align: center;
-    width: 20em;
+    width: 21em;
+    margin: 0 auto;
+    opacity: .7;
 }
+
 
 .client i {
     color: yellowgreen;
     font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 1 0 100%;
+        margin-bottom: 2em;
+    }
+    
+    .client .media-wrapper {
+        width: 22.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 1 0 100%;
+        margin-bottom: 2em;
+    }
+
+    .client .media-wrapper {
+        width: 25em;
+    }
+}
+
+@media (min-width: 1300px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 0 0 33%;
+        margin-bottom: 2em;
+    }
+
+    .client .media-wrapper {
+        width: 20em;
+    }
 }
