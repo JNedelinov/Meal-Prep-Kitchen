@@ -17,7 +17,7 @@ title: TheJJ'sBlog
 email: JJ
 description: JJ
 destination: docs
-baseurl: "/TestSite01" # the subpath of your site, e.g. /blog
+baseurl: "/TestSite02" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: JJ
 github_username:  JJ
