@@ -1,0 +1,119 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+@import url("typography.css");
+
+@import url("site-header.css");
+
+@import url("navigation.css");
+
+@import url("menus.css");
+
+@import url("site-main.css");
+
+@import url("our-happy-clients.css");
+
+@import url("site-footer.css");
+
+*, *:before, *:after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box; 
+}
+
+body {
+    background-image: linear-gradient(to right, #ffffff, #f7f6f7, #efeeef, #e8e5e6, #e1dddd);
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    transition: background 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
+}
+
+/* @media ( min-width: 1024px ) {
+ */
+    .wrapper {
+        width: 100%;
+        height: auto;
+    }
+
+    .lp-img {
+        padding-top: 10em;
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        background: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1948&q=80") center no-repeat fixed;
+    }
+
+    .lp-img:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: silver;
+        opacity: .4;
+        overflow: hidden;
+    }
+
+    .lp-img-header {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        width: 45em;
+        height: auto;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+/*         font-weight: bold; */
+        text-shadow: 2px 2px 5px #000000;
+        letter-spacing: 0.1em;
+        z-index: 1;
+    }
+
+    .lp-img-header h1 {
+        font-size: 65px;
+    }
+
+    .lp-img-header p {
+        font-size: 1.2em;
+    }
+
+    .lp-img-header p > span {
+        color: yellowgreen;
+    }
+
+    .lp-img-header > a.button {
+        margin-top: 3em;
+        text-decoration: none;
+        color: black;
+        background: white;
+        border: 3px solid silver;
+        border-radius: 0.3em;
+        padding: 1.5em 3em;
+        text-shadow: none;
+        opacity: .9;
+        width: 15em;
+        align-self: center;
+    }
+
+    .lp-img-header > a.button:hover {
+        color: white;
+        background: yellowgreen;
+        border-color: yellowgreen;
+    }
+
+/* .ready-customer {
+    max-width: 100vw;
+    max-height: 300px;
+    background: url("/meal-prep4.jpg") center no-repeat fixed;
+} */

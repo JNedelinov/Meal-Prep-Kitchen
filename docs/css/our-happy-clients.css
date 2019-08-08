@@ -1,0 +1,89 @@
+.our-happy-clients {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75em;
+    margin: 0 auto 4em auto;
+    padding: 1em;
+}
+
+.our-happy-clients h2 {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 1 0 100%;
+}
+
+/* .betty,
+.john,
+.jessica {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 0 33%;
+} */
+
+/* MEDIA Q FOR TABLETS (1 customer per scroll) */
+
+.client .media-wrapper {
+    width: 20em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.client .media-wrapper:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.client .media-wrapper:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in;
+}
+
+.client .media-wrapper:hover:after {
+    opacity: 0;
+}
+
+.client .media-wrapper img { 
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    border: 13px solid white;
+    border-radius: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.client h4 {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.client p {
+    flex: 1 0 100%;
+    text-align: center;
+    width: 20em;
+}
+
+.client i {
+    color: yellowgreen;
+    font-weight: bold;
+}

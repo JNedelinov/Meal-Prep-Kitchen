@@ -1,0 +1,111 @@
+.menus {
+    padding: 1em;
+}
+
+.menus .content {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 75em;
+    height: auto;
+    margin: 5em auto;
+}
+
+.vegetarians .content,
+.desserts .content {
+    flex-direction: row-reverse;
+}
+
+.media-wrapper {
+    width: 35em;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.3em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+    margin-bottom: 1em;
+}
+
+.media-wrapper:before {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.media-wrapper:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in;
+}
+
+.media-wrapper:hover:after {
+    opacity: 0;
+}
+
+.media-wrapper img { 
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.menus .content > h3 {
+    margin: auto;
+}
+
+.menus .content > h3 a {
+    color: black;
+    padding:1em;
+}
+
+@media (max-width: 600px) {
+    .menus .content {
+        flex-direction: column;
+    }
+    .media-wrapper {
+        width: 25em;
+    }
+}
+
+@media (min-width: 600px) {
+    .menus .content {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .media-wrapper {
+        width: 32em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .menus .content {
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .vegetarians .content,
+    .desserts .content {
+        flex-direction: row-reverse;
+}
+
+    .media-wrapper {
+        width: 34em;
+    }
+}
+
+@media (min-width: 1300px) {
+    .media-wrapper {
+        width: 36em;
+    }
+}

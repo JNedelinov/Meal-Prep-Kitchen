@@ -1,0 +1,159 @@
+.site-footer {
+    /* border-top: 2px solid black; */
+    text-align: center;
+    width: 100%;
+    background-color: rgb(207, 209, 211);
+    box-shadow: 0 0 5px 0 black;
+    /* padding: 1em; */
+}
+
+.news {
+    display: block;
+    padding: 2em;
+}
+
+.news ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.news li {
+    display: flex;
+    list-style: none outside;
+}
+
+.news li:nth-child(2) {
+    padding: 0 2em;
+}
+
+.news a {
+    text-decoration: none;
+    color: #eee;
+    opacity: .4;
+}
+
+.news a:hover {
+    opacity: 1;
+}
+
+.news img {
+    width: 125px; 
+    height: auto;
+}
+
+.footer-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-wrapper .logo {
+    margin-top: -1.7em;
+    width: 120px;
+}
+
+.footer-navigation {
+    display: flex;
+    text-align: left;
+}
+
+.footer-navigation ul {
+    padding-left: 4em;
+}
+
+.footer-navigation ul:last-child {
+    padding-right: 4em;
+}
+
+.footer-navigation li {
+    list-style: none outside;
+}
+
+.footer-navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-navigation a:hover {
+    opacity: .6;
+}
+
+.footer-wrapper .newsletter {
+    font-size: 1.1em;
+    width: 18em;
+    margin-top: -2.8em;
+}
+
+@media (max-width: 600px) {
+    .news img {
+        width: 75px;
+    }
+    .footer-wrapper .newsletter {
+        margin: 0;
+    }
+}
+
+.newsletter-form {
+    margin-top: 0.5em;
+}
+
+.newsletter-form input[type="email"]{
+    padding: 0.3em;
+    border-radius: 0.3em;
+    border: 1px solid black;
+}
+
+.newsletter-form input[type="email"]:hover {
+    border-color: yellowgreen;
+}
+
+.newsletter .button {
+    padding: 0.3em 0.5em;
+    border-radius: 0.3em;
+    border: 1px solid silver;
+    background: white;
+}
+
+.newsletter .button:hover {
+    color: black;
+    background: greenyellow;
+    border-color: yellowgreen;
+}
+
+.copyright {
+    padding-top: 2em;
+}
+
+.copyright a {
+    text-decoration: none;
+    color: black;
+}
+
+.copyright a:hover {
+    text-decoration: underline;
+    color: yellowgreen;
+}
+
+.sm-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+}
+
+.sm-icons li {
+    display: block;
+    padding: 0 0.7em 1.5em 0.7em;
+}
+
+.sm-icons a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.5em;
+}
+
+.sm-icons i:hover {
+    opacity: 0.5;
+}

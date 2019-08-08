@@ -1,0 +1,53 @@
+.site-navigation {
+    display: flex;
+    margin-left: auto;
+}
+
+.site-navigation ul {
+    display: flex;
+}
+
+.site-navigation li {
+    display: block;
+    list-style: none outside;
+}
+
+.site-navigation a {
+    display: flex;
+    padding: 1.3em;
+    margin: 0.5em;
+    text-decoration: none;
+    border-radius: 0.3em;
+    color: black;
+}
+
+.site-navigation li:nth-child(4) > a {
+    margin-right: 1.5em;
+}
+
+.site-navigation a:before {
+    display: block;
+    padding-right: 0.5em;
+    font-family: 'Font Awesome\ 5 Free';
+    font-weight: 900;
+}
+
+.site-navigation li:nth-child(1) > a:before {
+    content: '\f015';
+}
+
+.site-navigation li:nth-child(2) > a:before {
+    content: '\f2e7';
+}
+
+.site-navigation li:nth-child(3) > a:before {
+    content: '\f0c0';
+}
+
+.site-navigation li:nth-child(4) > a:before {
+    content: '\f2b9';
+}
+
+.site-navigation a:hover {
+    background: yellowgreen;
+}
