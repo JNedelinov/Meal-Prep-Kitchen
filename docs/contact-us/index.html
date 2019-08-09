@@ -12,12 +12,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <header class="site-header">
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+<header class="site-header">
     <p>
         <a href="/TestSite02/">
             <img class="logo" src="/TestSite02/images/Logo.png" alt="Logo">
         </a>
     </p>
+
+    <label for="nav-toggle" class="nav-toggle-button"><i class="fas fa-bars"></i></label>
 
     <nav class="site-navigation">
         <ul>
@@ -27,16 +30,42 @@
             <li><a href="/TestSite02/contact-us/">Contact Us</a></li>
         </ul>
     </nav>
+    
 </header>
 
-    <h2>Contact</h2>
+    <h2 class="contact-us-header">Contact Us</h2>
 <div class="contact-us">
     <div class="contacts">
-        <p></p>
+        <div class="basic-info">
+            <h4>Contact us:</h4>
+            <p>You could contact us at any time</p>
+            <h4>Working schedule:</h4>
+            <p>Monday - Friday: 8am - 9pm</p>
+            <p>Saturday - Sunday: 9am - 5pm</p>
+            <p>Holidays: 9am - 5pm</p>
+            <h4>Call us:</h4>
+            <p>(+359) 878 745 722</p>
+            <h4>Social Media:</h4>
+            <ul class="contact-us-icons">
+                <li><a href=""><i class="fa fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
+                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
+            </ul>
+        </div>
+        <form class="contact-us-form" action="#" method="post">
+            <p>
+                <label for="email">Enter you E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="your@email.com">
+            </p>
+            <p>
+                <textarea name="question" id="question" cols="30" rows="10" placeholder="Ask us something..."></textarea>
+            </p>
+        </form>
     </div>
     <div class="map">
         <div class="gmap_canvas">
-            <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=bulgaria%20sofia%20softuni&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bulgaria%20sofia%20softuni&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             <a href="https://www.enable-javascript.net">please enable javascript for this website</a>
         </div>
     </div>

@@ -1,9 +1,12 @@
+<input type="checkbox" id="nav-toggle" class="nav-toggle">
 <header class="site-header">
     <p>
         <a href="{{ site.baseurl }}/">
             <img class="logo" src="{{ site.baseurl }}/images/Logo.png" alt="Logo">
         </a>
     </p>
+
+    <label for="nav-toggle" class="nav-toggle-button"><i class="fas fa-bars"></i></label>
 
     <nav class="site-navigation">
         <ul>
@@ -13,4 +16,5 @@
             <li><a href="{{ site.baseurl }}/contact-us/">Contact Us</a></li>
         </ul>
     </nav>
+    
 </header>

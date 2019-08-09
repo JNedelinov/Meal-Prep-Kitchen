@@ -117,3 +117,63 @@ section > .content {
 .site-navigation a:hover {
     background: yellowgreen;
 }
+
+/* ----------------- */
+
+.nav-toggle {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+.nav-toggle-button {
+    display: none;
+}
+
+.nav-toggle:checked + .site-header .site-navigation {
+    display: block;
+}
+
+@media (max-width: 800px) {
+
+    .site-header {
+        height: auto;
+        text-align: center;
+    }
+
+    .site-header > p {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        width: 8.5em;
+    }
+
+    .logo {
+        width: 125px;
+        height: auto;
+        margin-bottom: -1em;
+    }
+
+    .nav-toggle-button {
+        display: block;
+        margin-left: auto;
+        padding-bottom: 1em;
+    }
+
+    .site-navigation {
+        display: none;
+    }
+
+    .site-navigation > ul {
+        display: block;
+    }
+
+    .nav-toggle + .site-header {
+        display: block;
+    }
+
+    .nav-toggle:checked + .site-header .site-navigation {
+        display: block;
+    }
+
+}

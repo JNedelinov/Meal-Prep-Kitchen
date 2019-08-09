@@ -70,9 +70,11 @@
 @media (max-width: 600px) {
     .menus .content {
         flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
     }
     .media-wrapper {
-        width: 25em;
+        width: 20em;
     }
 }
 

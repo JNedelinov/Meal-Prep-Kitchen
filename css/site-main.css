@@ -5,19 +5,22 @@
     margin: 2em auto;
 }
 
+.short-intro-info {
+    max-width: 57em;
+    margin: 1em auto;
+}
+
 .short-intro {
     padding: 1em;
     font-size: 1.3em;
     text-align: center;
-    max-width: 42em;
-    margin: 1em auto;
 }
 
 .ceoJ {
     font-size: 1.1em;
-    text-align: right;
-    margin-right: 11em;
     margin-bottom: 2em;
+    text-align: right;
+    padding: 1em;
 }
 
 .short-intro,
@@ -30,6 +33,7 @@
     max-width: 30em;
     margin: 2em auto 0 auto;
     font-size: 1.4em;
+    padding: 1em;
 }
 
 .menu-icons {
@@ -40,10 +44,15 @@
 .menu-icons li {
     display: inline-block;
     margin-top: 1.2em;
-    margin-bottom: 1.2em;
     font-size: 2em;
     padding-left: 1em;
     padding-right: 1em;
+}
+
+@media (max-width:600px) {
+    .menu-icons li{
+        font-size: 1.1em;
+    }
 }
 
 .menu-icons {
