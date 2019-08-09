@@ -44,13 +44,9 @@ a {
 .button {
     transition: background 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
 }
-   
-.wrapper {
-    width: 100%;
-    height: auto;
-}
 
 .lp-img {
+    margin-top: -100px;
     padding-top: 10em;
     position: relative;
     max-width: 100%;
@@ -121,8 +117,15 @@ a {
 }
 
 @media (max-width: 800px) {
+
+    .site-header {
+        position: relative;
+        
+    }
+
     .lp-img {
         max-height: 100%;
+        margin-top: 0;
     }
 
     .lp-img-header h1 {

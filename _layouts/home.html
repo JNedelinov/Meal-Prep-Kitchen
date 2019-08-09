@@ -14,33 +14,33 @@
 <body>
     {% include site-header.html %}
     
-        <div class="lp-img">
-            {% include home-header.html %}
-        </div>
+    <div class="lp-img">
+        {% include home-header.html %}
+    </div>
 
-        <div class="content-wrapper">
-            <div class="short-intro-info">
-                <p class="short-intro">"We are more than happy to share with all of you that our kitchen services spread all around the flavours of each one of you. From the people enjoying eating meals with meat to the people whose lives are based on eating only from the sources of the Earth. We could even offer you a menu which inlcludes many desserts from "cheat day" desserts to "fit day" desserts. All at one with the Meal - Prep Kitchen."</p>
-                <p class="ceoJ">- CEO Julien Nedelinov</p>
-            </div>
+    <div class="content-wrapper">
+        <div class="short-intro-info">
+            <p class="short-intro">"We are more than happy to share with all of you that our kitchen services spread all around the flavours of each one of you. From the people enjoying eating meals with meat to the people whose lives are based on eating only from the sources of the Earth. We could even offer you a menu which inlcludes many desserts from "cheat day" desserts to "fit day" desserts. All at one with the Meal - Prep Kitchen."</p>
+            <p class="ceoJ">- CEO Julien Nedelinov</p>
         </div>
+    </div>
 
-        {% include showing-short-menu.html %}
+    {% include showing-short-menu.html %}
+
+    <a href="{{ site.baseurl }}/our-menu" class="menu-button button">Go to the menu</a>
+
+    </div>
+    <div class="content-wrapper">
+        <main class="site-main">
+            {% include our-mission.html %}
+            {% include our-team.html %}
+        </main>
+        {% include our-happy-clients.html %}
+    </div>
 
         <a href="{{ site.baseurl }}/our-menu" class="menu-button button">Go to the menu</a>
-
-        </div>
-        <div class="content-wrapper">
-            <main class="site-main">
-                {% include our-mission.html %}
-                {% include our-team.html %}
-            </main>
-            {% include our-happy-clients.html %}
-        </div>
-
-            <a href="{{ site.baseurl }}/our-menu" class="menu-button button">Go to the menu</a>
-            
-        </div>
+        
+    </div>
 
     {% include site-footer.html %}
 </body>
