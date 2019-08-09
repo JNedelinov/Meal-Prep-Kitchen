@@ -10,7 +10,7 @@
     background: white;
     z-index: 2;
     opacity: .9;
-    box-shadow: 0 0 10px 0 black;
+/*     box-shadow: 0 0 10px 0 black; */
 }
 
 .site-header > p {
