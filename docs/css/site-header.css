@@ -1,7 +1,7 @@
 .site-header {
-    position: absolute;
+    /* position: absolute;
     top: 0;
-    left: 0;
+    left: 0; */
     display: flex;
     align-items: center;
     min-width: 100%;
@@ -9,8 +9,8 @@
     overflow: hidden;
     background: white;
     z-index: 2;
-    opacity: .9;
-/*     box-shadow: 0 0 10px 0 black; */
+    /* opacity: .9; */
+    /* box-shadow: 0 0 10px 0 black; */
 }
 
 .site-header > p {
@@ -24,6 +24,7 @@
 }
 
 @media (max-width:800px) {
+
     .site-header {
         height: auto;
         text-align: center;
