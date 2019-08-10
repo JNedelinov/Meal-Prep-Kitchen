@@ -12,13 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="fourOfour-rbb">
-        <h1>404</h1>
-        <p><strong>Page not found :(</strong></p>
-        <p style="padding-bottom: 1em">The requested page could not be found.</p>
-        <form>
-            <input type="button" value="Go back!" onclick="history.back()">
-        </form>
-    </div>
+    {% include site-header.html %}
+
+    {% include legal.html %}
+                
+    {% include site-footer.html %}
 </body>
 </html>

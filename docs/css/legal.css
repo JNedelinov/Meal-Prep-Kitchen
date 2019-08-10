@@ -1,0 +1,22 @@
+.legal-wrapper {
+    max-width: 60em;
+    padding: 1em;
+    margin: 2em auto;
+}
+
+.legal-wrapper p {
+    padding-bottom: .5em;
+}
+
+.legal-wrapper ul {
+    padding-left: 2em;
+    padding-bottom: 1em;
+}
+
+.legal-wrapper a {
+    color: yellowgreen;
+}
+
+.legal-wrapper a:hover {
+    text-decoration: underline;
+}
