@@ -115,11 +115,12 @@
     border-radius: 0.3em;
     border: 1px solid silver;
     background: white;
+    transition: color .3s ease-in, background .3s ease-in, border-color .3s ease-in;
 }
 
 .newsletter .button:hover {
-    color: black;
-    background: greenyellow;
+    color: white;
+    background: yellowgreen;
     border-color: yellowgreen;
 }
 

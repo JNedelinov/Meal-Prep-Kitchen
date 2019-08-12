@@ -23,7 +23,6 @@
 
 .lp-img-header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     max-width: 45em;
     height: auto;
@@ -49,27 +48,31 @@
 }
 
 .lp-img-header > a.button {
-    margin-top: 3em;
+    max-width: auto;
+    margin: 3em auto 2em auto;
     text-decoration: none;
-    color: black;
-    background: white;
-    border: 3px solid silver;
+    font-weight: bold;
+    color: white;
+    background: yellowgreen;
     border-radius: 0.3em;
     padding: 1.5em 3em;
     text-shadow: none;
     opacity: .9;
-    max-width: 15em;
-    align-self: center;
-    margin-bottom: 2em;
+    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
+    transition: opacity .3s ease-in, transform .25s ease-in;
 }
 
 .lp-img-header > a.button:hover {
-    color: white;
-    background: yellowgreen;
-    border-color: yellowgreen;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
+    opacity: 1;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 600px) {
+
+    .lp-img-header > a.button {
+        padding: 1.5em 2em;
+    }
 
     .site-header {
         position: relative;
@@ -79,6 +82,8 @@
     .lp-img {
         max-height: 100%;
         margin-top: 0;
+        background-image: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1600q=80");
+        background-size: cover;
     }
 
     .lp-img-header h1 {
@@ -86,7 +91,7 @@
     }
 
     .lp-img-header p {
-        font-size: .8em;
+        font-size: 12px;
     }
 }
 

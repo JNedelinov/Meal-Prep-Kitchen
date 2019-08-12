@@ -2,6 +2,8 @@
 
 @import url("our-menu-nav-header.css");
 
+@import url("our-menu-info.css");
+@import url("menu-list.css");
 @import url("gallery-grid.css");
 
 @import url("about-us.css");
@@ -42,6 +44,24 @@ a {
     text-decoration: none;
 }
 
-.button {
-    transition: background 0.3s ease-in, color 0.3s ease-in, border-color 0.3s ease-in;
+.food-gal-button {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5em 3em;
+    margin: 0 auto 4em auto;
+    max-width: 15em;
+    color: white;
+    background: yellowgreen;
+    border-radius: 0.3em;
+    opacity: .9;
+    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
+    transition: opacity .25s ease-in, transform .25s ease-in;
+    font-weight: bold;
+}
+
+.food-gal-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
+    opacity: 1;
 }

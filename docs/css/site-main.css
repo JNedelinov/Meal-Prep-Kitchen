@@ -38,25 +38,28 @@
 
 .menu-icons {
     list-style: none outside;
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
 }
 
 .menu-icons li {
-    display: inline-block;
+    flex: 1 0 25%;
+    display: block;
     margin-top: 1.2em;
     font-size: 2em;
-    padding-left: 1em;
-    padding-right: 1em;
+}
+
+.menu-icons i {
+    color: yellowgreen;
 }
 
 @media (max-width:600px) {
     .menu-icons li{
-        font-size: 1.1em;
+        flex: 1 0 50%;
+        font-size: 2em;
     }
-}
-
-.menu-icons {
-    color: yellowgreen;
 }
 
 .menu-button {
@@ -64,23 +67,23 @@
     text-transform: uppercase;
     text-align: center;
     padding: 1.5em 3em;
-    border: 3px solid silver;
     margin: 0 auto 4em auto;
-    width: 15em;
-    color: black;
+    max-width: 15em;
+    color: white;
+    background: yellowgreen;
     border-radius: 0.3em;
+    opacity: .9;
+    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
+    transition: opacity .25s ease-in, transform .25s ease-in;
+    font-weight: bold;
 }
 
 .menu-button:hover {
-    color: white;
-    background: yellowgreen;
-    border-color: yellowgreen;
+    transform: translateY(-2px);
+    box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
+    opacity: 1;
 }
 
-/* .site-main {
-    
-}
- */
 .our-mission {
     max-width: 60em;
     margin: 0 auto;

@@ -74,7 +74,7 @@
         flex-wrap: nowrap;
     }
     .media-wrapper {
-        width: 20em;
+        max-width: 25em;
     }
 }
 
@@ -85,7 +85,18 @@
         flex-wrap: nowrap;
     }
     .media-wrapper {
-        width: 32em;
+        max-width: 28em;
+    }
+}
+
+@media (min-width: 768px) {
+    .menus .content {
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+    .media-wrapper {
+        max-width: 31em;
     }
 }
 
@@ -102,12 +113,12 @@
 }
 
     .media-wrapper {
-        width: 34em;
+        max-width: 34em;
     }
 }
 
 @media (min-width: 1300px) {
     .media-wrapper {
-        width: 36em;
+        max-width: 36em;
     }
 }

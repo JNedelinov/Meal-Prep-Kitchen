@@ -8,7 +8,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 
 .perk {
@@ -27,4 +27,52 @@
     font-weight: bold;
     font-size: 2em;
     margin-bottom: .5em;
+}
+
+.what-we-expect {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 60em;
+    padding: 1em;
+    margin: 0 auto 2em auto;
+    text-align: center;
+}
+
+.wwe-in-return {
+    flex: 0 0 32.5%;
+    background: yellowgreen;
+    padding: 1.5em;
+    border-radius: 0.3em;
+    color: white;
+}
+
+.wwe-in-return h3 {
+    font-weight: bold;
+}
+
+.wwe-in-return > hr {
+    width: 75px;
+    height: 2px;
+    margin: -15px auto 15px auto;
+    background: white;
+    border: none;
+    border-radius: .3em;
+}
+
+@media only screen and (max-width: 767px) {
+
+    .perks {
+        justify-content: center;
+    }
+
+    .perk {
+        flex: 1 0 50%;
+    }
+
+    .wwe-in-return {
+        flex: 1 0 100%;
+        margin-bottom: 1em;
+    }
 }

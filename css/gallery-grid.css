@@ -1,3 +1,5 @@
+
+
 /* .gallery {
     padding: 0;
     margin: 0;
@@ -92,23 +94,5 @@
     left: 1em;
     z-index: 3;
     color: #FFF;
-} */
-
-.gallery { 
-    display: grid;
-    grid-template-columns: repeat(3, minmax(200px, 1fr));
-    grid-gap: 2em;
-    align-items: stretch;
 }
-
-.gallery li {
-    display: block;
-    list-style: none outside;
-}
-
-.gallery img {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    max-width: 350px;
-    height: auto;
-}
+ */
