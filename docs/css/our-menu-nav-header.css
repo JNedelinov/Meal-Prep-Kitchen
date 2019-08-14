@@ -9,6 +9,7 @@ section > .content {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: -webkit-sticky;
     position: sticky;
     top:0; 
     left: 0;
