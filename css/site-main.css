@@ -1,0 +1,113 @@
+.content-wrapper {
+    padding: 1em;
+    max-width: 75em;
+    max-height: auto;
+    margin: 2em auto;
+}
+
+.short-intro-info {
+    max-width: 57em;
+    margin: 1em auto;
+}
+
+.short-intro {
+    padding: 1em;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.ceoJ {
+    font-size: 1.1em;
+    margin-bottom: 2em;
+    text-align: right;
+    padding: 1em;
+}
+
+.short-intro,
+.ceoJ {
+    opacity: .7;
+}
+
+.go-to-the-menu {
+    text-align: center;
+    max-width: 30em;
+    margin: 2em auto 0 auto;
+    font-size: 1.4em;
+    padding: 1em;
+}
+
+.menu-icons {
+    list-style: none outside;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.menu-icons li {
+    flex: 1 0 25%;
+    display: block;
+    margin-top: 1.2em;
+    font-size: 2em;
+}
+
+.menu-icons i {
+    color: yellowgreen;
+}
+
+@media (max-width:600px) {
+    .menu-icons li{
+        flex: 1 0 50%;
+        font-size: 2em;
+    }
+}
+
+.menu-button {
+    display: block;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1.5em 3em;
+    margin: 0 auto 4em auto;
+    max-width: 15em;
+    color: white;
+    background: yellowgreen;
+    border-radius: 0.3em;
+    opacity: .9;
+    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
+    transition: opacity .25s ease-in, transform .25s ease-in;
+    font-weight: bold;
+}
+
+.menu-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
+    opacity: 1;
+}
+
+.our-mission {
+    max-width: 60em;
+    margin: 0 auto;
+    text-align: center;
+}
+
+ .our-mission p {
+    font-size: 1.3em;
+}
+
+.our-mission-top {
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+.sol-prblms {
+    font-size: 1.15em;
+    padding: 0 2em;
+    display: block;
+    list-style: none outside;
+    text-align:center;
+}
+
+.our-mission-bottom {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
