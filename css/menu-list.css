@@ -5,21 +5,12 @@
 }
 
 .menu-content {
-
-    /* display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: minmax(150px, auto);
-    grid-gap: 1em; */
-
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 2em;
 }
 
 .menu-content > h2 {
-
-    /* grid-column: span 3; */
-
     flex: 1 0 100%;
     text-align: center;
     margin: 2em 0;
@@ -105,18 +96,6 @@
     position: relative;
     overflow: hidden;
 }
-
-/* .menu-items .meal-wrapper:after {
-    display: block;
-    content: 'top pick';
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    color: red;
-    text-transform: uppercase;
-    font-weight: bold;
-    overflow: initial;
-} */
 
 .menu-items .meal-wrapper > img {
     width: 100%;

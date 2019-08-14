@@ -80,6 +80,8 @@
         display: block;
     }
 
+    .site-navigation a { justify-content: center; }
+
     .nav-toggle + .site-header {
         display: block;
     }

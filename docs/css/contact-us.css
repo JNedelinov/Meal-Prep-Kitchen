@@ -179,13 +179,13 @@
     }
     
     .gmap_canvas iframe {
-        width:480px;
-        height: 500px;
+        width: 370px;
+        height: 300px;
     }
 
 }
 
-@media only screen and (max-device-width:600px) {
+@media only screen and (max-device-width:650px) {
     .gmap_canvas iframe {
         width:600px;
         height: 400px;
@@ -196,8 +196,8 @@
 
 @media only screen and (device-width: 768px) {
     .gmap_canvas iframe {
-        width:768px;
-        height: 500px;
+        width:772px;
+        height: 282px;
     }
 }
 /* different techniques for iPad screening */
