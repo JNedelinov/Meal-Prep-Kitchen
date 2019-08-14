@@ -1,0 +1,137 @@
+.our-happy-clients {  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 75em;
+    max-height: 100%;
+    margin: 0 auto;
+    padding: 1em;
+}
+
+.our-happy-clients h2 {
+    flex-basis: 100%;
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+.client {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    flex-basis: 33%;
+}
+
+/* MEDIA Q FOR TABLETS (1 customer per scroll) */
+
+.client .media-wrapper {
+    width: 20em;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 2em;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.client .media-wrapper:before {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.client .media-wrapper:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: black;
+    opacity: 0.3;
+    transition: opacity 0.3s ease-in;
+}
+
+.client .media-wrapper:hover:after {
+    opacity: 0;
+}
+
+.client .media-wrapper img { 
+    width: 100%;
+    height: auto;
+    display: block;
+    position: absolute;
+    border: 13px solid white;
+    border-radius: 2em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.client h4 {
+    flex: 1 0 100%;
+    text-align: center;
+    margin-top: 2em;
+}
+
+.client p {
+    flex: 1 0 100%;
+    text-align: center;
+    width: 21em;
+    margin: 0 auto;
+    opacity: .7;
+}
+
+
+.client i {
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+@media (max-width: 600px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        justify-content: center;
+        margin-bottom: 2em;
+    }
+}
+
+@media (min-width: 600px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 1 0 100%;
+        margin-bottom: 2em;
+    }
+    
+    .client .media-wrapper {
+        width: 22.5em;
+    }
+}
+
+@media (min-width: 1024px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 1 0 100%;
+        margin-bottom: 2em;
+    }
+
+    .client .media-wrapper {
+        width: 25em;
+    }
+}
+
+@media (min-width: 1300px) {
+    .our-happy-clients {
+        justify-content: center;
+    }
+    .client {
+        flex: 0 0 33%;
+        margin-bottom: 2em;
+    }
+
+    .client .media-wrapper {
+        width: 20em;
+    }
+}
