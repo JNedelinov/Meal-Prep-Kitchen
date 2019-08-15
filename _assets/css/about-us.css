@@ -1,3 +1,9 @@
+.team-wrapp {
+    max-width: 77em;
+    margin: 0 auto;
+    padding: 1em;
+}
+
 .about-us {
     max-width: 50em;
     margin: 3em auto -3em auto;
@@ -15,7 +21,7 @@
 
 .message {
     font-size: 1.5em;
-    margin: 2em;
+    margin: 0 2em 2em 2em;
     text-align: center;
     font-weight: 700;
     text-transform: uppercase;
