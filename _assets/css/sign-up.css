@@ -1,0 +1,68 @@
+.signup-wrapp {
+    width: 100vw;
+    height: 130vh;
+    background-image: linear-gradient(to right bottom, #f0f010, #caec00, #a0e800, #6ee200, #00dc0a);
+}
+
+.sign-up-form {
+    max-width: 25em;
+    padding: 2em;
+    margin: 7em auto;
+    border-radius: .3em;
+    background: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-form p {
+    padding-bottom: 1.7em;
+    flex: 1 0 100%;
+    color: black;
+    font-weight: bold;
+}
+
+.sign-up-form label {
+    display: block;
+    padding: .4em;
+}
+
+.sign-up-form input {
+    display: block;
+    width: 20em;
+    padding: .7em;
+    font-size: 1.1em;
+    border-radius: .3em;
+    border: none;
+    font-weight: normal;
+    outline: none;
+}
+
+.sign-up-form input[type="email"]:focus,
+.sign-up-form input[type="password"]:focus {
+    background: #eee;
+}
+
+.sign-up-form input[type="button"] {
+    margin-top: 1.5em;
+    margin-bottom: -1em;
+    padding: 1.1em 0;
+    font-weight: bold;
+    text-transform: uppercase;
+    background: white;
+    border:  2px solid black;
+    color: yellowgreen;
+    outline: none;
+    box-shadow: 0 0 2px 0 black;
+    transition: background .25s ease-in, color .25s ease-in, transform 0.25s ease-in, border .25s ease-in       ;
+}
+
+.sign-up-form input[type="button"]:focus,
+.sign-up-form input[type="button"]:hover {
+    background: transparent;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px 0 black;
+    border: 2px solid yellowgreen;
+}

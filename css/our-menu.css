@@ -1,3 +1,7 @@
+@import url("https://use.fontawesome.com/releases/v5.8.2/css/all.css");
+
+@import url("variables.css");
+
 @import url("typography.css");
 
 @import url("our-menu-nav-header.css");
@@ -20,6 +24,11 @@
 @import url("404.css");
 
 @import url("animations.css");
+
+@import url("login.css");
+@import url("sign-up.css");
+
+@import url("faqs.css");
 
 *, *:before, *:after {
     padding: 0;

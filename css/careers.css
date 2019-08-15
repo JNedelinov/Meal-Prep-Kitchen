@@ -23,7 +23,7 @@
 }
 
 .perk i {
-    color: yellowgreen;
+    color: var(--color-of-icons-in-careers, red);
     font-weight: bold;
     font-size: 2em;
     margin-bottom: .5em;

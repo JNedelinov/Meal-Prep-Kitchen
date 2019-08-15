@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <div class="signin-wrapp">
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
 <header class="site-header">
     <p>
         <a href="/Meal-Prep-Kitchen/">
@@ -33,50 +34,22 @@
     
 </header>
 
-    <h2 class="contact-us-header">Contact Us</h2>
-<div class="contact-us">
-    <div class="contacts">
-        <div class="basic-info">
-            <h5>Contact us:</h5>
-            <p>You could contact us at any time</p>
-            <h5>Working schedule:</h5>
-            <p>Monday - Friday: 8am - 9pm</p>
-            <p>Saturday - Sunday: 9am - 5pm</p>
-            <p>Holidays: 9am - 5pm</p>
-            <h5>Call us:</h5>
-            <p>(+359) 878 745 722</p>
-            <h5>Write us:</h5>
-            <p>support@meal-prep-kitchen.com</p>
-            <h5>Social Media:</h5>
-            <ul class="contact-us-icons">
-                <li><a href=""><i class="fa fa-facebook"></i></a></li>
-                <li><a href=""><i class="fa fa-instagram"></i></a></li>
-                <li><a href=""><i class="fa fa-pinterest"></i></a></li>
-                <li><a href=""><i class="fa fa-linkedin-square"></i></a></li>
-            </ul>
-        </div>
-        <form class="contact-us-form" action="#" method="post">
-            <p>
-                <label for="email">Enter you E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="your@email.com">
-            </p>
-            <p>
-                <textarea name="question" id="question" cols="30" rows="10" placeholder="Ask us something..."></textarea>
-            </p>
-            <p>
-                <input type="button" class="button" value="Ask Us!">
-            </p>
-        </form>
-    </div>
-    <div class="map">
-        <div class="gmap_canvas">
-            <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=bulgaria%20sofia%20softuni&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-            <a href="https://www.enable-javascript.net">please enable javascript for this website</a>
-        </div>
-    </div>
-</div>
-            
-    <footer class="site-footer">
+        <form action="#" method="POST" class="sign-in-form">
+        <h3 style="padding: .7em 0;">Log In</h3>
+        <p>
+            <label for="email">Enter email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email:" required>
+        </p>
+        <p>
+            <label for="pass">Enter Password:</label>
+            <input type="password" name="pass" id="pass" placeholder="*******" required>
+        </p>
+        <p>
+            <input type="button" value="Log In">
+        </p>
+    </form>
+                
+        <footer class="site-footer">
     <div class="news">
         <ul>
             <li><a href="https://abcnews.go.com/"><img src="/Meal-Prep-Kitchen/images/abs1.png" alt="ABC news"></a></li>
@@ -134,5 +107,6 @@
     </ul>
 </footer>
 
+    </div>
 </body>
 </html>

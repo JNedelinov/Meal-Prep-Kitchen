@@ -1,0 +1,15 @@
+.faqs-wrapper {
+    max-width: 60em;
+    margin: 3em auto;
+    padding: 1em;
+}
+
+.faqs h4:before {
+    display: inline-block;
+    content: '-';
+    margin-right: .5em;
+}
+
+.faqs p {
+    padding-bottom: 1em;
+}
