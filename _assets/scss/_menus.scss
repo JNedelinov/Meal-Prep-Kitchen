@@ -1,15 +1,24 @@
 .menus {
     padding: 1em;
-}
 
-.menus .content {
-    display: flex;
-    justify-content: space-between;  
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 75em;
-    height: auto;
-    margin: 5em auto;
+    & .content {
+        display: flex;
+        justify-content: space-between;  
+        align-items: center;
+        flex-wrap: wrap;
+        max-width: 75em;
+        height: auto;
+        margin: 5em auto;
+
+        & > h3 {
+            margin: auto;
+
+            & a {
+                color: black;
+                padding:1em;
+            }
+        }
+    }
 }
 
 .vegetarians .content,
@@ -25,46 +34,37 @@
     border-radius: 0.3em;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
     margin-bottom: 1em;
-}
 
-.media-wrapper:before {
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-}
+    &:before {
+        display: block;
+        content: '';
+        padding-top: 56.25%;
+    }
 
-.media-wrapper:after {
-    display: block;
-    content: '';
-    padding-top: 56.25%;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: black;
-    opacity: 0.3;
-    transition: opacity 0.3s ease-in;
-}
+    &:after {
+        display: block;
+        content: '';
+        padding-top: 56.25%;
+        position: absolute;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: black;
+        opacity: 0.3;
+        transition: opacity 0.3s ease-in;
+    }
 
-.media-wrapper:hover:after {
-    opacity: 0;
-}
+    &:hover:after {
+        opacity: 0;
+    }
 
-.media-wrapper img { 
-    width: 100%;
-    height: auto;
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.menus .content > h3 {
-    margin: auto;
-}
-
-.menus .content > h3 a {
-    color: black;
-    padding:1em;
+    & img { 
+        width: 100%;
+        height: auto;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 }
 
 @media (max-width: 600px) {

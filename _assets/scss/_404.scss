@@ -1,0 +1,26 @@
+.fourOfour-rbb {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        & p {
+            font-size: 1.4em;
+        }
+
+        & form input[type="button"] {
+            padding: .5em 2em;
+            border: 2px solid yellowgreen;
+            color: white;
+            background: yellowgreen;
+            border-radius: .3em;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: opacity .2s ease-in;
+            cursor: pointer;
+            
+            &:hover {
+            opacity: .5;
+            }   
+        }
+}

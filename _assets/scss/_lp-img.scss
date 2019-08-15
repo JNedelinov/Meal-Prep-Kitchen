@@ -11,55 +11,52 @@
     overflow: hidden;
     background: url("https://images.unsplash.com/photo-1430931071372-38127bd472b8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2200&q=80") center no-repeat fixed;
     background-size: cover;
-}
 
-.lp-img:before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0; left: 0; right: 0; bottom: 0;
-    background: silver;
-    opacity: .4;
-    overflow: hidden;
-}
+        &:before {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            background: silver;
+            opacity: .4;
+            overflow: hidden;
+        }
 
-.lp-img-header {
-    display: flex;
-    flex-direction: column;
-    /* max-width: 45em; */
-    /* height: auto; */
-    /* margin: 0 auto; */
-    text-align: center;
-    color: white;
-    text-transform: uppercase;
-    text-shadow: 2px 2px 5px #000000;
-    letter-spacing: 0.1em;
-    z-index: 1;
-}
+        & .lp-img-header {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            color: white;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px #000000;
+            letter-spacing: 0.1em;
+            z-index: 1;
 
-.lp-img-header p > span {
-    color: yellowgreen;
-}
+                & p > span {
+                    color: yellowgreen;
+                }
 
-.lp-img-header > a.button {
-    max-width: auto;
-    margin: 3em auto 2em auto;
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-    background: yellowgreen;
-    border-radius: 0.3em;
-    padding: 1.5em 3em;
-    text-shadow: none;
-    opacity: .9;
-    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
-    transition: opacity .3s ease-in, transform .25s ease-in;
-}
+                & > a.button {
+                    max-width: auto;
+                    margin: 3em auto 2em auto;
+                    text-decoration: none;
+                    font-weight: bold;
+                    color: white;
+                    background: yellowgreen;
+                    border-radius: 0.3em;
+                    padding: 1.5em 3em;
+                    text-shadow: none;
+                    opacity: .9;
+                    box-shadow: 0 2px 2px 0 rgba(0,35,70,0.2);
+                    transition: opacity .3s ease-in, transform .25s ease-in;
 
-.lp-img-header > a.button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
-    opacity: 1;
+                    &:hover {
+                        transform: translateY(-2px);
+                        box-shadow: 0 16px 64px 0 rgba(0,35,70,0.5);
+                        opacity: 1;
+                    }
+                }
+        }
 }
 
 @media (min-width: 320px) {

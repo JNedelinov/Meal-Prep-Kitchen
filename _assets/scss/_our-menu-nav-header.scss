@@ -1,15 +1,7 @@
-section > .content {
-    max-width: 75em;
-    height: auto;
-    margin: 2em auto;
-    text-align: center;
-}
-
 .site-header {
     display: flex;
     justify-content: center;
     align-items: center;
-    position: -webkit-sticky;
     position: sticky;
     top:0; 
     left: 0;
@@ -139,6 +131,10 @@ section > .content {
 
     .site-navigation > ul {
         display: block;
+
+        & li:nth-child(4) > a{
+            margin-right: .5em;
+        }
     }
 
     .site-navigation a { justify-content: center; }
@@ -160,6 +156,6 @@ section > .content {
     }
 
     .logo {
-        width: 80px;
+        width: 125px;
     }
 }
