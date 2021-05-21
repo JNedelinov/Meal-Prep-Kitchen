@@ -4,7 +4,7 @@ TestSite02 repository. Hopefully that one won't stop working... :/
 
 # The Idea 
 
-Basically this repository is based on an idea of changing the people's lifestyles.
+Basically this multi-page application is based on an idea of changing the people's lifestyles.
 
 The idea is to give our customers more free time to spend enjoying with their families and loved ones and to stop worrying about making food.
 
